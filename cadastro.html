@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Banner</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head><!-- Header com Logo -->
+<header>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo do Projeto">
+    </div>
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- fim ACESSIBILIDADE EM LIBRAS -->
+
+<header>
+
+
+    <!-- Menu Dropdown -->
+    <nav>
+        <ul class="nav-menu">
+           
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="produtos.html">produtos</a></li>
+                <li><a href="sobrenos.html">sobre nós</a></li>
+                <li><a href="login.html">login</a></li>
+               
+                </ul>
+                </nav>
+        </ul>
+    </nav>
+
+        <div class="container">
+            <h2>Cadastro do Cliente</h2>
+            <form action="/cadastrar_cliente" method="POST">
+            <div class="card">
+               
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+     
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+     
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+     
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+     
+                    <label for="endereco">Endereço:</label>
+                    <textarea id="endereco" name="endereco" rows="4" required></textarea>
+     
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+       
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     
+         <!-- Footer -->
+         <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+     
+     
+    </body>
+    </html>
